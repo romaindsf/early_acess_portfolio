@@ -1,4 +1,4 @@
-import '..styles/_globals.scss'
+import '../styles/_globals.scss'
 
 export const metadata = {
   title: 'Portfolio de Romain Faria',

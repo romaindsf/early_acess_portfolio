@@ -1,0 +1,12 @@
+@use '../utils/utils' as *;
+
+body {
+  background-color: $mediumGrey;
+}
+h1 {
+  @include font-title(3rem);
+  text-align: center;
+}
+h2 {
+  @include font-title(2rem);
+}

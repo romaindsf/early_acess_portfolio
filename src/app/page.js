@@ -1,5 +1,11 @@
-import styles from '../styles/page.module.scss'
+import Presentation from '@/section/presentation/Presentation'
+import styles from '../styles/_page.module.scss'
 
 export default function Home() {
-  return <h1 className={styles.titre}>Hello word !</h1>
+  return (
+    <>
+      <h1>Portfolio</h1>
+      <Presentation />
+    </>
+  )
 }
