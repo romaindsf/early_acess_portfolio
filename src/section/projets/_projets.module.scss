@@ -8,35 +8,58 @@
   img {
     border-radius: 10px;
     background-size: contain;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  .active {
+    opacity: 1;
   }
   .chevronDown {
     display: flex;
     justify-content: space-around;
     svg {
       font-size: 4rem;
-      color: transparent;
+      color: $mediumGrey;
+      opacity: 0;
+      margin-bottom: 1.5rem;
+      transition: opacity 0.3s;
     }
     .active {
-      color: $mediumGrey;
+      opacity: 1;
     }
   }
   .descriptionProjet {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    height: 14rem;
+    height: 15rem;
     width: 90%;
     margin: auto;
+    .kasaDescription,
+    .ohMyFoodDescription {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .active {
+      opacity: 1;
+    }
     li {
       list-style: none;
       margin-bottom: 0.5rem;
     }
-    .kasaDescription {
-      width: 50%;
-      margin-right: auto;
-    }
-    .ohMyFoodDescription {
-      width: 50%;
-      margin-left: auto;
+  }
+  a {
+    display: inline-block;
+    margin: 1rem 3rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid $textColor;
+    border-left: 1px solid $textColor;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

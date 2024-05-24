@@ -47,8 +47,12 @@ export default function Projets() {
         />
       </div>
       <div className={styles.descriptionProjet}>
-        {active === 1 && (
-          <ul className={styles.kasaDescription}>
+        <div
+          className={`${styles.ohMyFoodDescription} ${
+            active === 1 ? styles.active : ''
+          }`}
+        >
+          <ul>
             <li>
               Le front-end de l'application a été implémenté en utilisant React
               et initialisé à l'aide de Create React App.
@@ -63,9 +67,26 @@ export default function Projets() {
               rendant le code modulaire, réutilisable et aisément maintenable.
             </li>
           </ul>
-        )}
-        {active === 2 && (
-          <ul className={styles.ohMyFoodDescription}>
+          <a
+            href='https://github.com/romaindsf/RD_P8_creez_une_application_web_de_location_immobiliere_avec_react'
+            target='_blank'
+          >
+            Lien gitHub
+          </a>
+          <a
+            href='https://romaindsf.github.io/RD_P8_creez_une_application_web_de_location_immobiliere_avec_react/'
+            target='_blank'
+          >
+            Lien gitHub Pages
+          </a>
+        </div>
+
+        <div
+          className={`${styles.ohMyFoodDescription} ${
+            active === 2 ? styles.active : ''
+          }`}
+        >
+          <ul>
             <li>
               Cette maquette a été développée avec les langages HTML et CSS en
               mobile-first, tout en étant responsive.
@@ -79,7 +100,19 @@ export default function Projets() {
               interactive et engageante.
             </li>
           </ul>
-        )}
+          <a
+            href='https://github.com/romaindsf/RD_P4_Am-liorez_linterface_dun_site_mobile_avec_des_animations_CSS'
+            target='_blank'
+          >
+            Lien gitHub
+          </a>
+          <a
+            href='https://romaindsf.github.io/RD_P4_Am-liorez_linterface_dun_site_mobile_avec_des_animations_CSS/'
+            target='_blank'
+          >
+            Lien gitHub Pages
+          </a>
+        </div>
       </div>
     </section>
   )

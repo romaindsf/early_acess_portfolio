@@ -2,6 +2,7 @@ import Presentation from '@/section/presentation/Presentation'
 import styles from '../styles/_page.module.scss'
 import Projets from '@/section/projets/Projets'
 import Competences from '@/section/competences/Competences'
+import Contact from '@/section/contact/Contact'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Presentation />
       <Competences />
       <Projets />
+      <Contact />
     </>
   )
 }
