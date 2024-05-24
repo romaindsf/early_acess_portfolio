@@ -17,7 +17,7 @@ export default function Contact() {
                 height={150}
               />
             </Link>
-            <Link href='#'>
+            <Link href='#' type='email'>
               <Image
                 src='/assets/IconeSocial/email_icn.png'
                 alt='icone email'
@@ -35,7 +35,6 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-
         <div className={styles.cvDiv}>
           <h2>Mon CV :</h2>
           <Image
