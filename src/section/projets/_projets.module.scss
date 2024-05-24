@@ -1,4 +1,42 @@
 @use '../../utils/utils' as *;
 
 .projetSection {
+  .galleryImg {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    border-radius: 10px;
+    background-size: contain;
+  }
+  .chevronDown {
+    display: flex;
+    justify-content: space-around;
+    svg {
+      font-size: 4rem;
+      color: transparent;
+    }
+    .active {
+      color: $mediumGrey;
+    }
+  }
+  .descriptionProjet {
+    display: flex;
+    align-items: center;
+    height: 14rem;
+    width: 90%;
+    margin: auto;
+    li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+    .kasaDescription {
+      width: 50%;
+      margin-right: auto;
+    }
+    .ohMyFoodDescription {
+      width: 50%;
+      margin-left: auto;
+    }
+  }
 }

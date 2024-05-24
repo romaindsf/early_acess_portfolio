@@ -12,5 +12,8 @@
     p {
       @include font(1.5rem);
     }
+    li {
+      margin-left: 5rem;
+    }
   }
 }

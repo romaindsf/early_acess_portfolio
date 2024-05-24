@@ -24,7 +24,7 @@ export default function Competences() {
             des composants réutilisables. 
             Je suis à l'aise avec JSX, l'utilisation de React Router, 
             ainsi que la gestion de contexte, même complexe, 
-            avec Redux Toolkit."
+            grâce à Redux ."
       />
       <div className={styles.competencesTranversales}>
         <p>

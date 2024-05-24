@@ -18,14 +18,16 @@ h1 {
 h2 {
   @include font-title();
   text-align: center;
-  margin-bottom: 5rem;
+  margin: 4rem;
 }
 p {
   @include font();
   padding: 1rem;
 }
+ul {
+  padding: 0;
+}
 li {
   @include font();
   margin-bottom: 1rem;
-  margin-left: 2rem;
 }
