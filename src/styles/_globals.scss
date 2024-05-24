@@ -3,10 +3,29 @@
 body {
   background-color: $mediumGrey;
 }
+section {
+  background-color: $clearGrey;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 20px;
+}
 h1 {
   @include font-title(3rem);
   text-align: center;
+  padding: 2rem;
 }
 h2 {
-  @include font-title(2rem);
+  @include font-title();
+  text-align: center;
+  margin-bottom: 5rem;
+}
+p {
+  @include font();
+  padding: 1rem;
+}
+li {
+  @include font();
+  margin-bottom: 1rem;
+  margin-left: 2rem;
 }

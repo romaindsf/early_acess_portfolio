@@ -1,0 +1,14 @@
+.competenceCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 2rem;
+
+  img {
+    border-radius: 10px;
+  }
+  p {
+    width: 50%;
+  }
+}

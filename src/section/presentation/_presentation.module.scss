@@ -1,0 +1,11 @@
+@use '../../utils/utils' as *;
+
+.presentationSection {
+  p {
+    @include font-title(1.5rem);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+  }
+}

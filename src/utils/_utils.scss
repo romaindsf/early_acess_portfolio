@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
-$mainBG: #f2f2f2;
+$clearGrey: #f2f2f2;
 $textColor: #333333;
 $mediumGrey: #999999;
 
-@mixin font-title($size: 1.25rem, $weight: 700) {
+@mixin font-title($size: 2rem, $weight: 700) {
   font-family: 'Merriweather', serif;
   color: $textColor;
   font-size: $size;
   font-weight: $weight;
 }
 
-@mixin font($size: 1rem, $weight: 400) {
+@mixin font($size: 1.25rem, $weight: 400) {
   font-family: 'Roboto', sans-serif;
   color: $textColor;
   font-size: $size;

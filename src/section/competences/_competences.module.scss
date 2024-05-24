@@ -1,0 +1,16 @@
+@use '../../utils/utils' as *;
+
+.competencesSection {
+  background-color: $mediumGrey;
+
+  .competencesTranversales {
+    width: 60%;
+    margin-left: auto;
+    padding: 2rem;
+    border-left: 2px solid $clearGrey;
+
+    p {
+      @include font(1.5rem);
+    }
+  }
+}
