@@ -7,11 +7,13 @@ import Contact from '@/section/contact/Contact'
 export default function Home() {
   return (
     <>
-      <h1>
-        Romain Faria <br />
-        Developpeur front-end
-      </h1>
-      <Presentation />
+      <div className={styles.grid}>
+        <h1>
+          Romain Faria <br />
+          Developpeur front-end
+        </h1>
+        <Presentation />
+      </div>
       <Competences />
       <Projets />
       <Contact />

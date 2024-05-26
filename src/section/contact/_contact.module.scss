@@ -1,7 +1,7 @@
 @use '../../utils/utils' as *;
 
 .contactSection {
-  background-color: $mediumGrey;
+  background-color: $color-primary;
 
   > div {
     display: flex;
@@ -11,19 +11,26 @@
   .socialGallery {
     display: flex;
     justify-content: space-around;
+    border-top: 3px solid $color-secondary;
   }
   .cvDiv {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .cvIcn {
+    width: 100%;
+    border-top: 3px solid $color-secondary;
+    text-align: center;
   }
   img {
     transform: scale(1);
     transition: transform 0.3s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }

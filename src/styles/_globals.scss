@@ -1,10 +1,11 @@
 @use '../utils/utils' as *;
 
 body {
-  background-color: $mediumGrey;
+  background-color: $color-primary;
+  margin: 0;
 }
 section {
-  background-color: $clearGrey;
+  background-color: $color-secondary;
   width: 90%;
   margin: auto;
   padding: 2rem;
@@ -18,7 +19,12 @@ h1 {
 h2 {
   @include font-title();
   text-align: center;
-  margin: 4rem;
+  margin: 3rem;
+}
+h3 {
+  @include font-title();
+  text-align: center;
+  margin: 2rem;
 }
 a {
   display: inline-block;

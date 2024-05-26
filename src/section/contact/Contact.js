@@ -7,7 +7,7 @@ export default function Contact() {
     <section className={styles.contactSection}>
       <div>
         <div>
-          <h2>Contact</h2>
+          <h3>Contact</h3>
           <div className={styles.socialGallery}>
             <Link href='#'>
               <Image
@@ -36,13 +36,17 @@ export default function Contact() {
           </div>
         </div>
         <div className={styles.cvDiv}>
-          <h2>Mon CV :</h2>
-          <Image
-            src='/assets/IconeSocial/cv_icn.webp'
-            alt='icone de CV'
-            width={150}
-            height={150}
-          />
+          <h3>Mon CV :</h3>
+          <div className={styles.cvIcn}>
+            <Link href='#'>
+              <Image
+                src='/assets/IconeSocial/cv_icn.webp'
+                alt='icone de CV'
+                width={150}
+                height={150}
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
