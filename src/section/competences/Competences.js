@@ -3,7 +3,7 @@ import CompetenceCard from '@/components/competenceCard/CompetenceCard'
 import styles from './_competences.module.scss'
 
 export default function Competences() {
-  const competence = data.compétences
+  const competence = data.competences
   return (
     <section className={styles.competencesSection}>
       <h2>{competence.title}</h2>

@@ -4,7 +4,7 @@
     "Je m'appelle Romain Faria, développeur front-end passionné, récemment diplômé de la formation d'intégrateur web proposée par l'organisme OpenClassrooms.",
     "J'ai hâte de continuer à approfondir mes connaissances et à les mettre en pratique à vos côtés."
   ],
-  "compétences": {
+  "competences": {
     "title": "Mes Compétences",
     "htmlcss": {
       "icone": "/assets/IconeLangage/html_css_icn.png",
@@ -30,7 +30,7 @@
   "projets": {
     "title": "Mes projets",
     "kasa": {
-      "picture": "/assets/SiteVignette/kasa.png",
+      "picture": "/assets/SiteVignette/kgasa.png",
       "alt": "Icone du site Kasa",
       "description": [
         "Le front-end de l'application a été implémenté en utilisant React et initialisé à l'aide de Create React App.",
@@ -44,7 +44,7 @@
       }
     },
     "ohmyfood": {
-      "picture": "/assets/SiteVignette/omf.png",
+      "picture": "/assets/SiteVignette/oomf.png",
       "alt": "Icone du site Oh My Food",
       "description": [
         "Cette maquette a été développée avec les langages HTML et CSS en mobile-first, tout en étant responsive.",
@@ -70,7 +70,7 @@
       "link": "romaindsf@hotmail.fr"
     },
     "github": {
-      "icone": "/assets/IconeSocial/github_icn.png",
+      "icone": "/assets/IconeSocial/ggitHub_icn.png",
       "alt": "icone github",
       "link": "https://github.com/romaindsf"
     }
