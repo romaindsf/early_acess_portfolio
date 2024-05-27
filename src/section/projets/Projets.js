@@ -1,24 +1,26 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client'
 import { useState } from 'react'
 import styles from './_projets.module.scss'
 import Image from 'next/image'
+import data from '../../data/data.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import ProjectButton from '@/components/projectButton/ProjectButton'
 
 export default function Projets() {
+  const projet = data.projets
   const [active, setActive] = useState(1)
   const handleClick = (index) => {
     setActive(index)
   }
   return (
     <section className={styles.projetSection}>
-      <h2>Mes projets</h2>
+      <h2>{projet.title}</h2>
       <div className={styles.galleryImg}>
         <Image
-          src='/assets/SiteVignette/kasa.avif'
-          alt='Icone du site Kasa'
-          width={500}
+          src={projet.kasa.picture}
+          alt={projet.kasa.alt}
+          width={600}
           height={400}
           className={active === 1 ? styles.active : ''}
           onClick={() => {
@@ -26,9 +28,9 @@ export default function Projets() {
           }}
         />
         <Image
-          src='/assets/SiteVignette/omf.avif'
-          alt='Icone du site Oh My Food'
-          width={500}
+          src={projet.ohmyfood.picture}
+          alt={projet.ohmyfood.alt}
+          width={600}
           height={400}
           className={active === 2 ? styles.active : ''}
           onClick={() => {
@@ -53,65 +55,38 @@ export default function Projets() {
           }`}
         >
           <ul>
-            <li>
-              Le front-end de l'application a été implémenté en utilisant React
-              et initialisé à l'aide de Create React App.
-            </li>
-            <li>
-              React Router a été utilisé pour configurer la navigation entre les
-              différentes pages de l'application.
-            </li>
-            <li>Les données sont extraites depuis un fichier JSON.</li>
-            <li>
-              L'interface du site est constituée de différents composants
-              rendant le code modulaire, réutilisable et aisément maintenable.
-            </li>
+            {projet.kasa.description.map((elem, index) => (
+              <li key={index}>{elem}</li>
+            ))}
           </ul>
-          <a
-            href='https://github.com/romaindsf/RD_P8_creez_une_application_web_de_location_immobiliere_avec_react'
-            target='_blank'
-          >
-            Lien gitHub
-          </a>
-          <a
-            href='https://romaindsf.github.io/RD_P8_creez_une_application_web_de_location_immobiliere_avec_react/'
-            target='_blank'
-          >
-            Lien gitHub Pages
-          </a>
+          <div className={styles.linkDiv}>
+            <ProjectButton href={projet.kasa.link.github} text='Lien gitHub' />
+            <ProjectButton
+              href={projet.kasa.link.website}
+              text='Lien gitHub Pages'
+            />
+          </div>
         </div>
-
         <div
           className={`${styles.ohMyFoodDescription} ${
             active === 2 ? styles.active : ''
           }`}
         >
           <ul>
-            <li>
-              Cette maquette a été développée avec les langages HTML et CSS en
-              mobile-first, tout en étant responsive.
-            </li>
-            <li>
-              L'utilisation de Sass a été privilégiée dans le but de rendre le
-              code plus organisé et maintenable.
-            </li>
-            <li>
-              Des animations CSS sont présentes, rendant la navigation
-              interactive et engageante.
-            </li>
+            {projet.ohmyfood.description.map((elem, index) => (
+              <li key={index}>{elem}</li>
+            ))}
           </ul>
-          <a
-            href='https://github.com/romaindsf/RD_P4_Am-liorez_linterface_dun_site_mobile_avec_des_animations_CSS'
-            target='_blank'
-          >
-            Lien gitHub
-          </a>
-          <a
-            href='https://romaindsf.github.io/RD_P4_Am-liorez_linterface_dun_site_mobile_avec_des_animations_CSS/'
-            target='_blank'
-          >
-            Lien gitHub Pages
-          </a>
+          <div className={styles.linkDiv}>
+            <ProjectButton
+              href={projet.ohmyfood.link.github}
+              text='Lien gitHub'
+            />
+            <ProjectButton
+              href={projet.ohmyfood.link.website}
+              text='Lien gitHub Pages'
+            />
+          </div>
         </div>
       </div>
     </section>

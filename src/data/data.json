@@ -1,0 +1,84 @@
+{
+  "title": "Romain Faria, Developpeur front-end",
+  "présentation": [
+    "Je m'appelle Romain Faria, développeur front-end passionné, récemment diplômé de la formation d'intégrateur web proposée par l'organisme OpenClassrooms.",
+    "J'ai hâte de continuer à approfondir mes connaissances et à les mettre en pratique à vos côtés."
+  ],
+  "compétences": {
+    "title": "Mes Compétences",
+    "htmlcss": {
+      "icone": "/assets/IconeLangage/html_css_icn.png",
+      "description": "Compétent en HTML et Css, je suis capable de transformer des maquettes en sites Web fonctionnels et responsives ."
+    },
+    "js": {
+      "icone": "/assets/IconeLangage/Js_icn.png",
+      "description": "Mes connaissances en Javascript me mermettent de développer des applications web intéractives, capables de gérer des événements, de manipuler le DOM et intéragir avec des API ."
+    },
+    "react": {
+      "icone": "/assets/IconeLangage/react_icn.png",
+      "description": "Avec une solide maîtrise de React, j'ai développé du code modulaire et des composants réutilisables. Je suis à l'aise avec JSX, l'utilisation de React Router, ainsi que la gestion de contexte, même complexe, grâce à Redux ."
+    },
+    "transversales": {
+      "text": "Au-delà des compétences techniques, cette formation m'a permis de développer des compétences transversales cruciales tels que:",
+      "liste": [
+        "La plannification du développement d'un site web",
+        "L'optimisation du SEO",
+        "Le débuggage de site"
+      ]
+    }
+  },
+  "projets": {
+    "title": "Mes projets",
+    "kasa": {
+      "picture": "/assets/SiteVignette/kasa.png",
+      "alt": "Icone du site Kasa",
+      "description": [
+        "Le front-end de l'application a été implémenté en utilisant React et initialisé à l'aide de Create React App.",
+        "React Router a été utilisé pour configurer la navigation entre les différentes pages de l'application.",
+        "Les données sont extraites depuis un fichier JSON.",
+        "L'interface du site est constituée de différents composants rendant le code modulaire, réutilisable et aisément maintenable."
+      ],
+      "link": {
+        "github": "https://github.com/romaindsf/RD_P8_creez_une_application_web_de_location_immobiliere_avec_react",
+        "website": "https://kasa-snowy.vercel.app/"
+      }
+    },
+    "ohmyfood": {
+      "picture": "/assets/SiteVignette/omf.png",
+      "alt": "Icone du site Oh My Food",
+      "description": [
+        "Cette maquette a été développée avec les langages HTML et CSS en mobile-first, tout en étant responsive.",
+        "L'utilisation de Sass a été privilégiée dans le but de rendre le code plus organisé et maintenable.",
+        "Des animations CSS sont présentes, rendant la navigation interactive et engageante."
+      ],
+      "link": {
+        "github": "https://github.com/romaindsf/RD_P4_Am-liorez_linterface_dun_site_mobile_avec_des_animations_CSS",
+        "website": "https://romaindsf.github.io/RD_P4_Am-liorez_linterface_dun_site_mobile_avec_des_animations_CSS/"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "linkedin": {
+      "icone": "/assets/IconeSocial/linkedin_icn.png",
+      "alt": "icone Linkedin",
+      "link": "https://fr.linkedin.com/"
+    },
+    "email": {
+      "icone": "/assets/IconeSocial/email_icn.png",
+      "alt": "icone email",
+      "link": "romaindsf@hotmail.fr"
+    },
+    "github": {
+      "icone": "/assets/IconeSocial/github_icn.png",
+      "alt": "icone github",
+      "link": "https://github.com/romaindsf"
+    }
+  },
+  "cv": {
+    "title": "Mon CV :",
+    "icone": "/assets/IconeSocial/cv_icn.webp",
+    "alt": "icone de CV",
+    "link": "/assets/cv/cv_pdf.pdf"
+  }
+}

@@ -1,47 +1,54 @@
 import Link from 'next/link'
 import styles from './_contact.module.scss'
 import Image from 'next/image'
+import data from '../../data/data.json'
 
 export default function Contact() {
+  const contact = data.contact
+
   return (
     <section className={styles.contactSection}>
       <div>
         <div>
-          <h3>Contact</h3>
+          <h3>{contact.title}</h3>
           <div className={styles.socialGallery}>
-            <Link href='#'>
+            <a href={contact.linkedin.link} target='_blank'>
               <Image
-                src='/assets/IconeSocial/linkedin_icn.png'
-                alt='icone Linkedin'
+                src={contact.linkedin.icone}
+                alt={contact.linkedin.alt}
                 width={150}
                 height={150}
               />
-            </Link>
-            <Link href='#' type='email'>
+            </a>
+            <a
+              href={`mailto:${contact.email.link}`}
+              type='email'
+              target='_blank'
+            >
               <Image
-                src='/assets/IconeSocial/email_icn.png'
-                alt='icone email'
+                src={contact.email.icone}
+                alt={contact.email.alt}
                 width={150}
                 height={150}
               />
-            </Link>
-            <Link href='#'>
+            </a>
+            <a href={contact.github.link} target='_blank'>
               <Image
-                src='/assets/IconeSocial/github_icn.png'
-                alt='icone email'
+                src={contact.github.icone}
+                alt={contact.github.alt}
                 width={150}
                 height={150}
               />
-            </Link>
+            </a>
           </div>
         </div>
         <div className={styles.cvDiv}>
-          <h3>Mon CV :</h3>
+          <h3>{data.cv.title}</h3>
           <div className={styles.cvIcn}>
-            <Link href='#'>
+            <Link href={data.cv.link} target='_blank'>
               <Image
-                src='/assets/IconeSocial/cv_icn.webp'
-                alt='icone de CV'
+                src={data.cv.icone}
+                alt={data.cv.alt}
                 width={150}
                 height={150}
               />

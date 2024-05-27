@@ -1,3 +1,4 @@
+import data from '../data/data.json'
 import Presentation from '@/section/presentation/Presentation'
 import styles from '../styles/_page.module.scss'
 import Projets from '@/section/projets/Projets'
@@ -8,10 +9,7 @@ export default function Home() {
   return (
     <>
       <div className={styles.grid}>
-        <h1>
-          Romain Faria <br />
-          Developpeur front-end
-        </h1>
+        <h1>{data.title}</h1>
         <Presentation />
       </div>
       <Competences />
