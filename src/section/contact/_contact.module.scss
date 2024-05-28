@@ -6,12 +6,27 @@
   > div {
     display: flex;
     justify-content: space-around;
+    @media (max-width: 785px) {
+      flex-direction: column;
+    }
   }
-
+  h2 {
+    @include font-title();
+    text-align: center;
+    margin: 2rem;
+  }
   .socialGallery {
     display: flex;
     justify-content: space-around;
     border-top: 3px solid $color-secondary;
+  }
+  .contact_icn {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    @include mobile-screen {
+      height: 100px;
+    }
   }
   .cvDiv {
     width: 30%;
@@ -19,6 +34,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 785px) {
+      width: 100%;
+    }
   }
   .cvIcn {
     width: 100%;

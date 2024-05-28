@@ -10,42 +10,54 @@ export default function Contact() {
     <section className={styles.contactSection}>
       <div>
         <div>
-          <h3>{contact.title}</h3>
+          <h2>{contact.title}</h2>
           <div className={styles.socialGallery}>
-            <a href={contact.linkedin.link} target='_blank'>
+            <a
+              className={styles.contact_icn}
+              href={contact.linkedin.link}
+              target='_blank'
+              title={contact.linkedin.title}
+            >
               <Image
                 src={contact.linkedin.icone}
                 alt={contact.linkedin.alt}
-                width={150}
-                height={150}
+                fill
+                sizes='100vw'
               />
             </a>
             <a
+              className={styles.contact_icn}
               href={`mailto:${contact.email.link}`}
               type='email'
               target='_blank'
+              title={contact.email.title}
             >
               <Image
                 src={contact.email.icone}
                 alt={contact.email.alt}
-                width={150}
-                height={150}
+                fill
+                sizes='100vw'
               />
             </a>
-            <a href={contact.github.link} target='_blank'>
+            <a
+              className={styles.contact_icn}
+              href={contact.github.link}
+              target='_blank'
+              title={contact.github.title}
+            >
               <Image
                 src={contact.github.icone}
                 alt={contact.github.alt}
-                width={150}
-                height={150}
+                fill
+                sizes='100vw'
               />
             </a>
           </div>
         </div>
         <div className={styles.cvDiv}>
-          <h3>{data.cv.title}</h3>
+          <h2>{data.cv.title}</h2>
           <div className={styles.cvIcn}>
-            <Link href={data.cv.link} target='_blank'>
+            <Link href={data.cv.link} target='_blank' title={data.cv.title}>
               <Image
                 src={data.cv.icone}
                 alt={data.cv.alt}

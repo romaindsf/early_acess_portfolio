@@ -4,64 +4,135 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1024%26quot%3b)' fill='none'%3e%3cpath d='M-185.24 184.3 a146.3 146.3 0 1 0 292.6 0 a146.3 146.3 0 1 0 -292.6 0z' fill='rgba(253%2c 248%2c 240%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M838.92 270.36 a139.37 139.37 0 1 0 278.74 0 a139.37 139.37 0 1 0 -278.74 0z' fill='rgba(253%2c 248%2c 240%2c 1)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1024'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100dvh;
 
-  .galleryImg {
+  > div {
     display: flex;
-    justify-content: space-around;
-  }
-  img {
-    border-radius: 10px;
-    background-size: contain;
-    cursor: pointer;
-    opacity: 0.6;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
+    @include small-desktop-screen {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
+  .thumbnailDiv {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    @media (max-width: 1360px) {
+      width: 500px;
+      height: 333px;
+    }
+    @include small-desktop-screen {
+      width: 600px;
+      height: 400px;
+    }
+    @include tablet-screen {
+      width: 450px;
+      height: 300px;
+    }
+    @include mobile-screen {
+      width: 100vw;
+    }
+    img {
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      opacity: 0.6;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+      @include small-desktop-screen {
+        opacity: 1;
+        transform: scale(1.05);
+        transition: none;
+      }
+    }
+  }
+
   .active {
     opacity: 1;
     transform: scale(1.05);
   }
-  .chevronDown {
-    display: flex;
-    justify-content: space-around;
-    svg {
-      font-size: 4rem;
-      color: $color-primary;
-      opacity: 0.2;
-      margin-bottom: 1.5rem;
-      transition: all 0.3s ease-in-out;
-    }
+
+  svg {
+    font-size: 4rem;
+    color: $color-primary;
+    opacity: 0.2;
+    transition: all 0.3s ease-in-out;
     .active {
       opacity: 1;
     }
+    @include small-desktop-screen {
+      opacity: 1;
+      transition: none;
+      margin-top: 1rem;
+    }
   }
-  .descriptionProjet {
+  .kasaProject {
+    @include small-desktop-screen {
+      margin-bottom: 2rem;
+    }
+    svg {
+      @include mobile-screen {
+        color: $color-secondary;
+      }
+    }
+  }
+  .kasaProject,
+  .omfProject {
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    width: 90%;
-    margin: auto;
+    @include small-desktop-screen {
+      width: 90%;
+    }
     .kasaDescription,
     .ohMyFoodDescription {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      height: 20dvh;
+      padding: 1rem;
       opacity: 0;
       transition: opacity 0.3s;
+      @media (max-width: 1360px) {
+        height: 25dvh;
+      }
+      @include small-desktop-screen {
+        height: auto;
+        display: flex;
+        opacity: 1;
+        transition: none;
+      }
     }
     .active {
+      display: flex;
       opacity: 1;
     }
-    li {
-      list-style: none;
-      margin-bottom: 0.5rem;
-    }
+  }
+  p {
+    margin: 0;
+    padding: 0.2rem;
   }
   .linkDiv {
-    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+    display: none;
     justify-content: space-evenly;
-    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    .active {
+      display: flex;
+      opacity: 1;
+    }
+    @include small-desktop-screen {
+      opacity: 1;
+      display: flex;
+      transition: none;
+    }
   }
 }

@@ -60,16 +60,19 @@
   "contact": {
     "title": "Contact",
     "linkedin": {
+      "title": "linkedin",
       "icone": "/assets/IconeSocial/linkedin_icn.png",
       "alt": "icone Linkedin",
       "link": "https://fr.linkedin.com/"
     },
     "email": {
+      "title": "email",
       "icone": "/assets/IconeSocial/email_icn.png",
       "alt": "icone email",
       "link": "romaindsf@hotmail.fr"
     },
     "github": {
+      "title": "github",
       "icone": "/assets/IconeSocial/ggitHub_icn.png",
       "alt": "icone github",
       "link": "https://github.com/romaindsf"

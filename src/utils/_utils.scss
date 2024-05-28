@@ -17,3 +17,21 @@ $textColor: #212529;
   font-size: $size;
   font-weight: $weight;
 }
+
+@mixin small-desktop-screen {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-screen {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

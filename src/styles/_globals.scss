@@ -21,11 +21,6 @@ h2 {
   text-align: center;
   margin: 3rem;
 }
-h3 {
-  @include font-title();
-  text-align: center;
-  margin: 2rem;
-}
 a {
   display: inline-block;
   @include font();
