@@ -5,7 +5,7 @@ import { icon } from '/assets/favicon/favicon-16x16.png'
 
 export const metadata = {
   icons: {
-    icon: '/icon-light.svg',
+    icon: { icon },
   },
 }
 
