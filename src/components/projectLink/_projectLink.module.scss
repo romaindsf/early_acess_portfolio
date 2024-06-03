@@ -9,7 +9,7 @@
   background-color: $color-primary;
   border: 1px solid transparent;
   border-radius: 10px;
-
+  transition: border 0.15s ease-in-out;
   &:hover {
     border: 1px solid $textColor;
   }

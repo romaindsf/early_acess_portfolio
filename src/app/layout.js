@@ -1,40 +1,34 @@
 import '../styles/_globals.scss'
-import { NextSeo } from 'next-seo'
-import { LocalBusiness, WebSite } from 'react-schemaorg'
-import { icon } from '/assets/favicon/favicon-16x16.png'
 
 export const metadata = {
-  icons: {
-    icon: { icon },
+  title: 'Portfolio de Romain Faria',
+  description: 'Développeur Web Junior',
+  openGraph: {
+    title: 'Portfolio de Romain Faria',
+    description:
+      'Découvrez le portfolio de Romain Faria, développeur web junior.',
+    url: 'https://rfaria.com',
+    siteName: 'Portfolio de Romain Faria',
+    locale: 'fr_FR',
+    type: 'website',
   },
 }
-
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'http://schema.org/',
+    '@type': 'Person',
+    'name': 'Romain FARIA',
+    'url':
+      'https://early-acess-portfolio-9aej2syqq-arietys-projects.vercel.app/',
+    'jobTitle': 'Développeur front-end',
+  }
   return (
     <html lang='fr'>
       <body>
-        <NextSeo
-          title='Portfolio de Romain Faria'
-          description='Découvrez le portfolio de Romain Faria, développeur web front-end.'
-          canonical='https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/'
-          openGraph={{
-            url: 'https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/',
-            title: 'Portfolio de Romain Faria',
-            description:
-              'Découvrez le portfolio de Romain Faria, développeur web front-end.',
-            site_name: 'Portfolio de Romain Faria',
-          }}
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <LocalBusiness
-          id='https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/'
-          name='Romain Faria'
-          description='Découvrez le portfolio de Romain Faria, développeur web front-end.'
-          url='https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/'
-          email='romaindsf@hotmail.fr'
-          addressRegion='Île-de-France'
-          addressCountry='FR'
-        />
-        <WebSite id='https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/' />
         <main>{children}</main>
       </body>
     </html>
