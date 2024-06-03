@@ -16,20 +16,12 @@ export default function RootLayout({ children }) {
         <NextSeo
           title='Portfolio de Romain Faria'
           description='Découvrez le portfolio de Romain Faria, développeur web front-end.'
-          canonical='https://rfaria.com'
+          canonical='https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/'
           openGraph={{
-            url: 'https://rfaria.com',
+            url: 'https://early-acess-portfolio-4sqm519yd-arietys-projects.vercel.app/',
             title: 'Portfolio de Romain Faria',
             description:
               'Découvrez le portfolio de Romain Faria, développeur web front-end.',
-            images: [
-              {
-                url: 'https://rfaria.com/og-image.jpg',
-                width: 800,
-                height: 600,
-                alt: 'Portfolio de Romain Faria',
-              },
-            ],
             site_name: 'Portfolio de Romain Faria',
           }}
         />
