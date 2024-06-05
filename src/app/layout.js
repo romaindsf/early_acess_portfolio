@@ -7,7 +7,7 @@ export const metadata = {
     title: 'Portfolio de Romain Faria',
     description:
       'Découvrez le portfolio de Romain Faria, développeur web junior.',
-    url: 'https://rfaria.com',
+    url: 'https://early-acess-portfolio.vercel.app/',
     siteName: 'Portfolio de Romain Faria',
     locale: 'fr_FR',
     type: 'website',
@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
     '@context': 'http://schema.org/',
     '@type': 'Person',
     'name': 'Romain FARIA',
-    'url':
-      'https://early-acess-portfolio-9aej2syqq-arietys-projects.vercel.app/',
+    'url': 'https://early-acess-portfolio.vercel.app/',
     'jobTitle': 'Développeur front-end',
   }
   return (
